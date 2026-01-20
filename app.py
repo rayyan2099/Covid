@@ -3,7 +3,7 @@ import tensorflow as tf
 from PIL import Image
 import numpy as np
 
-st.set_page_config(page_title="Covid-19 X-Ray Detection", layout="centered")
+st.set_page_config(page_title=" Covid-19 X-Ray Detection", layout="centered")
 
 @st.cache_resource
 def load_model():
@@ -38,3 +38,4 @@ if uploaded_file is not None:
         st.error("Prediction: COVID Positive")
     else:
         st.success("Prediction: Normal")
+
